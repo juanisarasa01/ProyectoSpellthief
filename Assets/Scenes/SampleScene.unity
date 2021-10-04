@@ -172,7 +172,7 @@ Camera:
   m_GameObject: {fileID: 207254362}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -188,7 +188,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 170
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -303,7 +303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7596c5c898b48f479071c39c136e757, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Velocidad: 20
+  Velocidad: 3000
   objetoACrear: {fileID: 7795779850605101664, guid: 8e402789659a62b4bb87c68a7920f37a, type: 3}
 --- !u!50 &374352642
 Rigidbody2D:
@@ -495,7 +495,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 787372809}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.1, y: 1, z: 1}
+  m_LocalPosition: {x: 3.6, y: 1, z: 1.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
