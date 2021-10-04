@@ -19,10 +19,14 @@ public class MovimientoPersonaje : MonoBehaviour
         if (Input.GetButton("Derecha"))
         {
             move.x = 1;
+            gameObject.GetComponent<Animator>().SetBool("run", true);
+            gameObject.GetComponent<SpriteRenderer>().flipX = false;
         }
         if (Input.GetButton("Izquierda"))
         {
             move.x = -1;
+            gameObject.GetComponent<Animator>().SetBool("run", true);
+            gameObject.GetComponent<SpriteRenderer>().flipX = true;
         }
         if (Input.GetButton("Arriba"))
         {
@@ -37,6 +41,11 @@ public class MovimientoPersonaje : MonoBehaviour
             Instantiate(objetoACrear, transform.position, transform.rotation);
         }
             rb2d.MovePosition((Vector2)this.transform.position + (move * Velocidad * Time.deltaTime)); 
+
+        if (!Input.GetButton("Derecha") && !Input.GetButton("Izquierda"))
+        {
+            gameObject.GetComponent<Animator>().SetBool("run", false);
+        }
             
     }
 }
