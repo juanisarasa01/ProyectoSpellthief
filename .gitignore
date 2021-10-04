@@ -58,3 +58,9 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+#.DS_Store
+
+.idea/.idea.PROJECT_NAME/idea/workspace.xml
+.idea/.idea.PROJECT_NAME/idea/contentModel
+
+/artifacts/
